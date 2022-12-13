@@ -17,7 +17,7 @@ if(!empty($_POST['email'])){
 <h1 style="color:#0000ff">LOGIN</h1>
 <fieldset>
     <form method="post">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clique aqui<p style="collor:red"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CUIDADO AO CLICAR AQUI<p style="collor:red"></a>
         Email: <br>
         <input type="email" name="email"><br><br>
         Senha: <br>
