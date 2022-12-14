@@ -2,16 +2,17 @@ body{
     margin: 0 auto;
     width: 100;
     max-width: 1920px;
-    background-color:rgb(10, 193, 199);
+    background-color:rgb(34, 34, 34);
 
 }
 header{
     position: relative;
-    background: linear-gradient(rgb(9, 165, 170),rgb(10, 193, 199));
+    background: linear-gradient(rgb(0, 0, 0),rgb(228, 231, 231));
     height: 133px;
+    clear: both;
 }
 footer{
-    background: linear-gradient(rgb(10, 193, 199),rgb(9, 165, 170));
-    height: 550px;
+    background: linear-gradient(rgb(34, 34, 34),rgb(228, 231, 231));
+    height: 500px;
     clear: both;
 }
