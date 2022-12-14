@@ -1,6 +1,9 @@
 <?php
 session_start();
 require 'classes/usuarios.class.php';
+require 'fonte.php';
+
+
 if(!empty($_POST['email'])){
     $email = addslashes($_POST['email']);
     $senha = md5($_POST['senha']);
@@ -14,15 +17,31 @@ if(!empty($_POST['email'])){
     }
 }
 ?>
-<h1 style="color:#0000ff">LOGIN</h1>
+<body>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</body>
+
+    <head>
+    <h1><center><img src="img/logos_senai_branco.png" style="width: 35%" alt="Logo do Senai"></center></h1>
+
+    <h2><center><p class="a">LOGIN</center></h2>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
 <fieldset>
     <form method="post">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CUIDADO AO CLICAR AQUI<p style="collor:red"></a>
-        Email: <br>
-        <input type="email" name="email"><br><br>
-        Senha: <br>
-        <input type="password" name="senha"><br><br>
-        <input type="submit" value="Entrar">
+       <center><p class="b"> Email: <br>
+        <input type="email" name="email"><br><br> </center>
+       <center><p class="b"> Senha: <br>
+        <input type="password" name="senha"><br><br></center>
+       <center><p class="b"> <input type="submit" value="Entrar"> </center>
         <link rel="styleheet" type="text/css" href="css/estilo.css">
     </form>
 </fieldset>
+
+<footer>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</footer>
+
