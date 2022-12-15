@@ -2,13 +2,12 @@
 session_start();
 require 'classes/usuarios.class.php';
 require 'fonte.php';
-
-
 if(!empty($_POST['email'])){
     $email = addslashes($_POST['email']);
     $senha = md5($_POST['senha']);
 
     $usuario = new Usuarios();
+    
     if($usuario->fazerLogin($email, $senha)){
         header("Location: index.php");
         exit;

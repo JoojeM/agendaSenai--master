@@ -11,7 +11,7 @@
         public function __construct(){
 
             $this->servidor = "localhost";
-            $this->banco = "agendasenai-";
+            $this->banco = "agendaSenai--master";
             $this->usuario = "root";
             $this->senha = "";
         }
