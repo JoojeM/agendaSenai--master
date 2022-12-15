@@ -8,8 +8,8 @@ if(!empty($_POST['id'])){
         $senha = $_POST['senha'];
         $email = $_POST['email'];
 
-        $usuario->adicionar($nome, $email, $senha);
-        header('Location: index.php');
+        $usuario->adicionar($nome, $email, $senha, $permissoes);
+        header('Location: gestao_usuario.php');
     }
     else{
         echo 'script type="text/javascript">alert("Usuario ja cadastrado");</script>';

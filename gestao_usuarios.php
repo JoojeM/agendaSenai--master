@@ -3,38 +3,32 @@ session_start();
 include 'inc/header.inc.php';
 include 'classes/usuarios.class.php';
 
-if(!isset($_SESSION['logado'])){
-    header('Location: login.php')
-    exit;
-}
-
 $usuarios = new Usuarios();
 
-$usuarios->setUsuarios($_SESSION['logado']);
 ?>
-        <h1>usuarios Senai</h1>
-        <hr>
-        <?php if($usuarios->temPermissao('')): ?><button><a href="adicionar_usuario.php">CRIAR NOVA CONTA</a><button><?php endif; ?>
-        <br><br><hr>
-        <button><a href="sair.php">SAIR</a><button>
-            <table border="1" width="100%">
-        <tr>
-            <th>NOME</th>
-            <th>EMAIL</th>
+        <body>
+            <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        </body>
+
+        <table class="table table-bordered" width="100%">
+            
+        <tr algin="center" bgcolor="white">
+             <th><font face="cursive"><u>NOME</u></th>
+             <th><font face="cursive"><u>EMAIL</u></th>
         </th>
+        
         <?php
             $lista = $usuarios->listar();
             foreach($lista as $item);
         ?>
-        <tr>
-            <td><?php echo $item['nome'];?></td>
-            <td><?php echo $item['email'];?></td>
-            <td>
-                <button><a href="editar_usuario.php?id=<?php echo $item['id'];?>">EDITAR USUARIO</a></button>
-                <button><a href="ecluir_usuario.php?id=<?php echo $item['id'];?>">EXCLUIR USUARIO</a></button>
-            </td>
-        </tr>
 
-<?php
-include 'inc/footer.php';
-?>
+        <tr algin="center" bgcolor="white">
+            <td><font face="cursive"><b><?php echo $item['nome'];?></b></td>
+            <td><font face="cursive"><b><?php echo $item['email'];?></b></td>
+        </tr>
+        </table>
+        <center><a><button class="btn btn-info"><a href="adicionar_usuario.php">CRIAR NOVO USUARIO</a></button></center>
+        <?php
+        include 'inc/footer.inc.php';
+        ?>
+            

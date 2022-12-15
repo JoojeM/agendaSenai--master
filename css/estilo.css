@@ -7,12 +7,12 @@ body{
 }
 header{
     position: relative;
-    background: linear-gradient(rgb(0, 0, 0),rgb(228, 231, 231));
-    height: 133px;
+    background: linear-gradient(rgb(0, 0, 0),rgb(34, 34, 34));
+    height: 150px;
     clear: both;
 }
 footer{
-    background: linear-gradient(rgb(34, 34, 34),rgb(228, 231, 231));
+    background: linear-gradient(rgb(34, 34, 34),rgb(172, 172, 172));
     height: 500px;
     clear: both;
 }
